@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1E1E1E"/>
+    <meta name="description" content="Ramya's Portfolio... Created using react (CRA)" />
+    <title>RAMYA M G- Portfolio</title><center><img src="photo_100x129.jpg"></center>
+    <link rel="icon" href="icon.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body  class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center"> 
+            <h1 class="text-2xl font-bold">Hi, I am RAMYA M G </h1>
+               
+               <p>
+                <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about"class="hover:underline">About</a></li>
+                    <li><a href="#skills"class="hover:underline">Skills</a></li>
+                    <li><a href="#projects"class="hover:underline">Projects</a></li>
+                    <li><a href="#contact"class="hover:underline">Contact</a></li>
+                </ul>
+                </nav>  
+               </p>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section id="about" class="my-8">
+            <center><img src="theme1.jpeg"></center>
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-2xl">
+                Hello! I'm Ramya,a software engineer specializing in Python and web development.
+                I create dynamic, efficient, and scalable software solutions. My passion lies in
+                building innovative web applications and leveraging Python for various data and automation tasks.
+                Collaborative and commited to quality,you thrive in dynamic teams.Eager to contribute
+                creativy and bring innovative ideas to life.
+            </p>
+            <style>
+                .resume-box {
+                    width: 300px;
+                    padding: 20px;
+                    margin: 50px auto;
+                  
+                    text-align: center;
+                    border-radius: 10px;
+                    background-color: #b6229d;
+                }
+        
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    background-color: #921c6b;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                  button:hover {
+                    background-color: #cfd5dd;
+                }
+            </style>        
+            <center>
+                 <button onclick="checkResume()"> Check Resume </button>
+            </div>
+            <script>
+                function checkResume() {
+              window.open('CV Active 1.pdf','_blank');
+            }
+  
+            </script>
+        </center>
+        <center><img src="pic/logo.jpeg"></center>
+        </section>
+        <section id="skills" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <p class="text-2xl">Here are some of my skills on which I have learnt.</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded shadow">
+            <h2 class="text-center font-bold mb-4">Frontend</h2>
+            <ol>
+                <li>HTML<img src="html5.png"></li>
+                <li>CSS<img src="CSS3.webp"></li>
+                <li>JavaScript<img src="JavaScript.webp"></li>
+                <li>Bootstrap<img src="bootstrap.png"></li>
+             </ol>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+             <h2 class="text-center font-bold mb-4">Backend</h2>
+             <ol>
+                 <li>Python<img src="python_image_50x50.jpeg"></li> 
+                 <li>Django Framework <img src="dj.jpeg"></li>
+             </ol>
+             <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-center font-bold mb-4">Others</h2>
+                <ol>
+                    <li>Git<img src="git.png"></li> 
+                    <li>GitHub<img src="GitHub.png"></li>
+                    <li>VS Code<img src="Visual_Studio.webp"></li>
+                    <li>PyCharm<img src="pycharm_50x50.jpeg"></li>
+                 </ol>
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <section id="projects" class="my-8">
+            
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">Project One</h3>
+                    <p class="text-lg mb-2">Online product recommendation system using facial expression,age and race recognition with automated zooming method.
+                        A web application built with Python and Flask. It features a user-friendly interface and robust backend architecture.</p>
+                          
+                        <style>
+                            .image-container {
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .image-container img {
+                                margin: 0 10px;
+                            }
+                        </style>
+                        <div class="image-container">
+                            <img src="face detection.jpeg" alt="event 1" width="300" height="200">
+                            <img src="face recognition using deep learning.jpeg" alt="event 2" width="300" height="200">
+                        </div>
+                          <img src="project 1.webp">
+                           <a href="#" class="text-blue-600 hover:underline">View Project</a>
+                           <script>
+                            // JavaScript function to handle the button click
+                            document.getElementById("viewProjectBtn").addEventListener("click", function() {
+                                // URL of the PDF file
+                                const pdfUrl = 'oprs.pdf';
+                                // Open the PDF in a new window or tab
+                                window.open(pdfUrl, '_blank');
+                            });
+                        </script>
+                           </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
+                    <p class="text-lg mb-2"> "Efficiently manage your events with our comprehensive platform,
+                        designed to streamline planning, coordination, and execution for a flawless event experience."
+                        Feel free to tweak it based on the specific focus of the site!
+                        An interactive website developed using HTML, CSS, and JavaScript.
+                        It showcases responsive design and modern web technologies.</p>
+                      
+                      <center> 
+                        <img src="event1.png">
+                        <img src="event2.png">
+                        </center>
+                    <a href="https://rjramya.neocities.org/Event/event" class="text-blue-600 hover:underline">View Project</a>
+                </div>
+                <center>
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-2xl font-semibold mb-2">Project Three</h4>
+                    <p class="text-lg mb-2">EMC project is an online registration platform i developed,showcasing my
+                        proficiency in HTML,CSS, and Javascript.</p>
+                    </p>
+                    <center>
+                        <img src="emc_1.png">
+                    </center>
+                     <a href="https://rjramya.neocities.org/Emc/findex" class="text-blue-600 hover:underline">View Project</a>
+                 </div>
+                </center>
+            
+            </div>
+        </section>
+
+        <section id="contact" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <form id="contact-form" class="bg-white p-4 rounded shadow">
+                <label for="name" class="block text-lg mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded mb-4" required>
+                
+                <label for="email" class="block text-lg mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded mb-4" required>
+
+                <label for="message" class="block text-lg mb-2">Message:</label>
+                <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded mb-4" rows="4" required></textarea>
+
+                <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <p class="text-sm">&copy; RAMYA. All rights reserved.</p>
+                <a href="CV Active 1.pdf" class="text-blue-400 hover:underline">Download My Resume</a>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://github.com/ramya" target="_blank" class="text-blue-400 hover:underline" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.84 8.16 6.8 9.47.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.36-3.37-1.36-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.52 1.02 1.52 1.02.91 1.54 2.37 1.1 2.95.84.09-.66.35-1.1.64-1.36-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.26-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.02.8-.22 1.66-.33 2.52-.33.86 0 1.72.11 2.52.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.41.1 2.67.64.7 1.03 1.6 1.03 2.69 0 3.84-2.35 4.69-4.58 4.93.36.31.67.92.67 1.85v2.74c0 .27.18.57.68.48C21.16 20.16 24 16.42 24 12c0-5.52-4.48-10-10-10z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/ramya" target="_blank" class="text-blue-400 hover:underline" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 3A2 2 0 0 1 21 5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-9.5 14H7v-6h2.5v6zm-1.25-7.25c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm8.75 7.25h-2.5v-3.25c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V17h-2.5v-6h2.5v1.5c.42-.65 1.09-1.5 2.5-1.5 1.67 0 3 1.33 3 3v3z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/johndoe" target="_blank" class="text-blue-400 hover:underline" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M23 3a10.94 10.94 0 0 1-3.15.86A4.49 4.49 0 0 0 22.4 1.8a10.98 10.98 0 0 1-3.5 1.34A4.48 4.48 0 0 0 16.68 0c-2.48 0-4.49 2.02-4.49 4.49 0 .35.04.69.1 1.02A12.74 12.74 0 0 1 3.26 1.18 4.48 4.48 0 0 0 3.1 5.4a4.5 4.5 0 0 1-2.04-.56v.06c0 2.17 1.54 3.98 3.58 4.39a4.51 4.51 0 0 1-2.03.08c.57 1.77 2.23 3.08 4.19 3.12A9.03 9.03 0 0 1 1 19.03a12.78 12.78 0 0 0 6.93 2.04c8.33 0 12.89-6.89 12.89-12.89 0-.2 0-.4-.02-.6A9.13 9.13 0 0 0 23 3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
+            <a href="mailto:rjramya706@gmail.com" class="text-blue-400 hover:underline" aria-label="Email">
+                Email: rjramya706@gmail.com
+            </a>
+            
+            <a href="https://www.linkedin.com/in/ramya-m-g-996b07134" target="_blank" class="text-blue-400 hover:underline" aria-label="LinkedIn">
+                LinkedIn: Ramya M G
+            </a>
+        </div>
+
+    </footer>
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Ramya. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
